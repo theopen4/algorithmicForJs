@@ -39,3 +39,5 @@ function factoriell (numb){
 }
 console.log(factoriel(5))
 console.log(factoriell(5))
+let x = 1 + 2 + "3"
+console.log(x)
