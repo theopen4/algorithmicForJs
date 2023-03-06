@@ -12,8 +12,8 @@ function generatePage(todoList){
         const label = document.createElement('label');
         label.for = todoList.id 
         label.innerText = todoList.title
-        
         sectionData.appendChild(input);
+        sectionData.appendChild(label);
         //const elementp = document.createElement('p')
        // elementp.innerText = todoList.title
         
