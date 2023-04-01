@@ -11,6 +11,13 @@ export const createThing = (name: string, callback: Function) => {
         callback (null, insertId)
     } );
     
-    
-
+}
+export const findOneThing = (thindId: number, callback: Function) =>{
+    const queryString = 'SELECT * FROM  thing where id = ?'
+    connection.query(queryString, [thindId], (error, result) =>{
+        if (error){
+            callback(error)
+        }
+        const row = (<RowDataPacket> result)[0]
+    })
 }
